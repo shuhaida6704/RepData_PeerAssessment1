@@ -1,4 +1,9 @@
-# Reproducible Research: Peer Assessment 1
+---
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+  html_document:
+    keep_md: true
+---
 
 
 ## Loading and preprocessing the data
@@ -94,7 +99,7 @@ dailysteps
 ggplot(dailysteps, aes(x=steps)) + geom_histogram(fill="blue", color="black")+ggtitle("Histogram of Total Number of Steps Taken Per Day") +xlab("Total Steps Per Day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
 
 
 
@@ -196,7 +201,7 @@ xyplot(
   layout=c(1,2))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-6-1.png) 
+![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png) 
 
 
 8. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
@@ -258,7 +263,7 @@ date_steps_imputed <- aggregate(steps ~ date, datafull, sum)
 ggplot(date_steps_imputed, aes(x=steps)) + geom_histogram(fill="blue", color="black")+ggtitle("(Imputed) Histogram of total number of steps per day") +xlab("Total Steps Per Day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-9-1.png) 
+![plot of chunk unnamed-chunk-9](figure/unnamed-chunk-9-1.png) 
 
 ```r
 # get mean and median of total number of steps per day
@@ -334,20 +339,6 @@ xyplot(
   layout=c(1,2))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-11-1.png) 
+![plot of chunk unnamed-chunk-11](figure/unnamed-chunk-11-1.png) 
 
 
-
-## What is mean total number of steps taken per day?
-
-
-
-## What is the average daily activity pattern?
-
-
-
-## Imputing missing values
-
-
-
-## Are there differences in activity patterns between weekdays and weekends?
