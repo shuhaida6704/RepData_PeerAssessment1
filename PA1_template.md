@@ -7,6 +7,7 @@ output:
 
 
 ## Loading and preprocessing the data
+
 1. Load the data (i.e. read.csv())
 2. Process/transform the data (if necessary) into a format suitable for your analysis
 
@@ -16,7 +17,6 @@ library(ggplot2)
 file<-"./activity.csv"
 MyData<-read.csv(file, header = TRUE, sep= ",")
 ```
-
 
 
 ## What is mean total number of steps taken per day?

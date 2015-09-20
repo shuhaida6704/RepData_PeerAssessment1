@@ -19,7 +19,6 @@ MyData<-read.csv(file, header = TRUE, sep= ",")
 ```
 
 
-
 ## What is mean total number of steps taken per day?
 3. For this part of the assignment, you can ignore the missing values in the dataset.
 
